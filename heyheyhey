@@ -1,0 +1,98 @@
+import java.util.Scanner;
+public class flabworkz4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int grade = 7;
+		float sum;
+		sum = 0;
+		float classpart;
+		float midtermGrade[]= new float[grade];
+		int index;
+		Scanner dog = new Scanner(System.in);
+		
+		for ( index = 0; index < grade; index++)
+		{
+			System.out.println("Enter your midterm Grade:");
+			float input = dog.nextFloat();
+			midtermGrade[index] = input;
+			sum = sum + midtermGrade[index];
+		}//for
+		
+			float classparti = (sum / grade);
+			System.out.println("Class Participation" + classparti);
+			System.out.println(" ");
+			System.out.println("Midterm Exam:");
+			float midtermexam =dog.nextFloat();
+			float MID = ((midtermexam *(float).40) + (classparti *(float).60));
+			System.out.println("MIDTERM GRADE:" + MID);
+			System.out.println(midtermsum(MID));
+			
+			
+			//Final Grade
+			float sum;
+			sum = 0;
+			float classpart;
+			float midtermGrade[]= new float[grade];
+			int index;
+			Scanner dog = new Scanner(System.in);
+			
+			for ( index = 0; index < grade; index++)
+			{
+				System.out.println("Enter your midterm Grade:");
+				float input = dog.nextFloat();
+				midtermGrade[index] = input;
+				sum = sum + midtermGrade[index];
+			}//for
+			
+				float classparti = (sum / grade);
+				System.out.println("Class Participation" + classparti);
+				System.out.println(" ");
+				System.out.println("Midterm Exam:");
+				float midtermexam =dog.nextFloat();
+				float MID = ((midtermexam *(float).40) + (classparti *(float).60));
+				System.out.println("MIDTERM GRADE:" + MID);
+				System.out.println(midtermsum(MID));
+			
+			
+			
+			}
+	public static float midtermsum(float midtirms)
+	{
+		float equi =0;
+		if (midtirms >=95 && midtirms <=100 )
+		{
+			equi = (float)4.0;
+		}
+		else if (midtirms >=91 && midtirms <=94.9)
+		{
+			equi = (float)3.5;
+		}
+		else if (midtirms >=87 && midtirms <=90.9)
+		{
+			equi = (float)3.0;
+		}
+		else if (midtirms >=83 && midtirms <=86.9)
+		{
+			equi = (float)2.5;
+		}
+		else if (midtirms >=79 && midtirms <=82.9)
+		{
+			equi = (float)2.0;
+		}
+		else if (midtirms >=75 && midtirms <=78.9)
+		{
+			equi = (float)1.5;
+		}
+		else if (midtirms >=70 && midtirms <=74.9)
+		{
+			equi = (float)1.0;
+		}
+		else 
+		{
+			 equi =(float) 0.0;
+		}
+					return equi;
+	}
+}
+
